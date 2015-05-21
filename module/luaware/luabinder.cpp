@@ -146,6 +146,12 @@ void push(lua_State *L, long ret)
 }
 
 template<>
+void push(lua_State *L, long long ret)
+{
+  lua_pushnumber(L, ret);           
+}
+
+template<>
 void push(lua_State *L, unsigned long ret)
 {
   lua_pushnumber(L, ret);           

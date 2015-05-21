@@ -29,7 +29,10 @@ main()
 
 	lua_instance.call<int>("getMaxLevNum","test",0);
 	printf("config: %0.1f\n",lua_instance.get_config_var<float>("game_monster_config","param5"));
-	printf("addNumber %d\n",lua_instance.call<int>("addNumber",10,20));
+    long long long_num=4503599627370496;
+//	printf("addNumber %d\n",lua_instance.call<int>("addNumber",10,long_num));
+//	printf("addNumber %d\n",lua_instance.call<long long>("addNumber",10,4503599627370496));
+	printf("addNumber %d\n",lua_instance.call<long long>("addNumber",10,18014398509482083));
 
 	sleep(100000);
 }

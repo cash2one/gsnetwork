@@ -23,7 +23,6 @@ sleep(20);
 int
 main()
 {
-	float _val = float(90)/float(100);
-	printf("%0.5f",_val);
+    test_float_int();
 }	
 

@@ -1,6 +1,7 @@
 #pragma once
 #include <stdio.h>
 #include <string.h>
+#include <map>
 
 
 struct TTestStaticStructNew
@@ -13,7 +14,8 @@ struct TTestStaticStructNew
 
 
 void test_static_struct_new();
-
+void test_multi_map();
+void test_float_int();
 
 class TestNullObject
 {
